@@ -4,7 +4,7 @@
   "description": "Rademade Test",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "./node_modules/gulp/bin/gulp.js"
+    "start": "node ./node_modules/gulp/bin/gulp.js"
   },
   "author": "Rademade",
   "license": "ISC",
