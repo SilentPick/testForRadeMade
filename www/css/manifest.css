@@ -1,0 +1,29 @@
+div,h1,h2,h3,h4,h5,h6,li,ol,p,span,ul{margin:0;padding:0}
+li,ol,ul{list-style-type:none}
+button{outline:0;border:0;background:0 0}
+a{text-decoration:none}
+html,
+body {
+  font-size: 16px;
+  color: #333C4E;
+  background: #fafafa;
+  font-family: 'roboto', Arial, sans-serif;
+  font-family: 'roboto', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: antialiased;
+
+}
+html {
+  overflow-y: scroll;
+}
+.fix {
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
