@@ -1,3 +1,252 @@
 @import 'base/variables.css';
 @import 'base/reset.css';
 @import 'base/main.css';
+
+
+body{
+  margin: 0;
+}
+.wrapeer__left-colunm{
+  height: 600px;
+  background-color: #303841;
+  width: 320px;
+  flex-shrink: 0;
+}
+.wrapper{
+  display: flex;
+}
+
+.wrapper__main-content{
+  height: 54%;
+  background: yellow;
+  display: flex;
+}
+
+.wrapper__name{
+  font-size: 17px;
+  margin-right: 33px;
+  margin-left: 3px;
+  margin-top: 25px;
+}
+
+.wrapper__status{
+  background: #ffc12d;
+  border-radius: 4px;
+  color: white;
+  font-size: 11px;
+  height: 18px;
+  width: 51px;
+  text-align: center;
+  line-height: 18px;
+  margin-left: -9px;
+  margin-top: 20px;
+}
+
+.details__position{
+  margin-bottom: 16px;
+  color: #999999;
+  font-size: 15px;
+}
+
+.main-content__user-info{
+  height: 100%;
+  background: blue;
+  width: 17.6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-details__info{
+  height: 124px;
+  width: 100%;
+  border-bottom: solid 1px #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info__wrapper{
+  display: flex;
+  height: 50%;
+  align-items: center;
+}
+
+.main-content__user-details{
+  height: 100%;
+  width: 100%;
+}
+
+.user-info__avatar{
+  height: 90px;
+  width: 90px;
+  background: url("/images/ico/avatar2.png") no-repeat;
+  background-position: center 10%;
+  background-size: 129%;
+  border-radius: 50px;
+  margin-left: 34px;
+}
+
+.header__left-side{
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right-side{
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-side__ring{
+  background: url("/images/ico/ring.png") no-repeat;
+  width: 20px;
+  position: relative;
+  height: 20px;
+  margin-right: 37px;
+}
+
+.right-side__avatar{
+  height: 38px;
+  width: 38px;
+  border-radius: 30px;
+  margin-right: 17px;
+}
+
+.right-side__user{
+  color: #4f4f4f;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+.ring__notify{
+    background: url("/images/ico/notify.png") no-repeat;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 14px;
+    top: -5px;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    font-size: 9px;
+}
+
+.left-side__costumers{
+  color: #4f4f4f;
+  font-size: 16px;
+  padding-left: 38px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-side__name{
+  font-size: 16px;
+  color: #442a9d;
+  padding-left: 0px;
+  padding-right: 17px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper__right-colunm{
+  height: 389px;
+  width: 100%;
+  background: green;
+}
+.left-colunm__header{
+  width: 53px;
+  height: 19px;
+  color: #ffc12d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: -1.3px;
+  margin-top: 45px;
+  margin-left: 26px;
+  margin-bottom: 45px;
+}
+
+.right-column__header{
+  height: 68px;
+  background: white;
+  border-bottom: solid 1px #ededed;
+  display: flex;
+}
+
+.right-side__input{
+  background: url(/images/ico/search.png) no-repeat scroll right 17px top 10px;
+  width: 285px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  margin-right: 45px;
+  padding-left: 21px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-side_arrow{
+  border-top: solid 3px black;
+  border-right: solid 3px black;
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
+}
+
+.wrapper__img{
+  margin-right: 18px;
+}
+.reports_btn{
+  height: 53px;
+}
+
+.calendar_btn{
+  height: 49px;
+}
+.customers_btn{
+  height: 68px;
+}
+.dashboard_btn{
+  height: 65px;
+}
+.customers_btn:active{
+  background-color: #442a9d;
+}
+.customers_btn:active::before{
+  content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 5px;
+    bottom: 0;
+    background-color: #ffc12d;
+}
+
+.wrapper__button{
+  width: 100%;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 26px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.wrapper__line{
+  background-color: #ffffff;
+  opacity: 0.07;
+  height: 1px;
+  width: 90%;
+}
+
+.left-colunm__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
