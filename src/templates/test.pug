@@ -1,6 +1,60 @@
 html
   head
-    link(rel="stylesheet" type="text/css" href="./css/manifest.css")
-
+    link(rel='stylesheet', type='text/css', href='./css/manifest.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
   body
-    div.wrapper 
+    .wrapper
+      .wrapeer__left-colunm.left-column
+        .left-colunm__header CRM
+        .left-colunm__wrapper
+          button.wrapper__button.dashboard_btn
+            img.wrapper__img(src='images/ico/dashboard.png', alt='')
+            | Dashboard
+          .left-colunm__line
+          // left-colunm__line correct !!!
+          button.wrapper__button.reports_btn
+            img.wrapper__img(src='images/ico/reports.png', alt='')
+            | Reports
+          .wrapper__line
+          button.wrapper__button.customers_btn.is-active
+            img.wrapper__img(src='images/ico/customers.png', alt='')
+            | Customers
+          .wrapper__line
+          button.wrapper__button.calendar_btn
+            img.wrapper__img(src='images/ico/calendar.png', alt='')
+            | Calendar
+          .wrapper__line  
+      .wrapper__right-colunm
+        .right-column__header.header
+          .header__left-side
+            .header__costumers Customers
+            .header_arrow
+            .header__name Max Jones
+          .header__right-side
+            input.header__input(placeholder='SEARCH')
+            .header__ring.ring
+              .ring__notify 4
+            img.header__avatar(src='images/ico/avatar.png')
+            .header__user Hello Lauren
+        .wrapper__main-content
+          .main-content__user-info
+            .user-info__avatar
+          .main-content__user-details
+            .user-details__info
+              .info__wrapper
+                .wrapper__name MAX JONES
+                .wrapper__status GOLD
+              .details__position Sales & Marketing
+            .user-details__info.info
+              .info__phone
+                .phone__type PHONE
+                .phone__number (+31) 140 175 468
+              .info__address
+                .address__text ADDRESS
+                .address__address Binnenweg 50, Rotterdam
+              button.info__button CREATE QUOTE
+        .main-content__tabs.tabs
+          .tabs__container
+            .tabs__button.is-active OVERVIEW
+            .tabs__button ORDERS
+            .tabs__button PAYMENTS
