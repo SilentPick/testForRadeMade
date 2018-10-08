@@ -6,33 +6,34 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="wrapeer__left-colunm">
+      <div class="wrapeer__left-colunm left-column">
         <div class="left-colunm__header">CRM</div>
         <div class="left-colunm__wrapper">
           <button class="wrapper__button dashboard_btn"><img class="wrapper__img" src="images/ico/dashboard.png" alt=""/>Dashboard</button>
-          <div class="wrapper__line"></div>
+          <div class="left-colunm__line"></div>
+          <!-- left-colunm__line correct !!! -->
           <button class="wrapper__button reports_btn"><img class="wrapper__img" src="images/ico/reports.png" alt=""/>Reports</button>
           <div class="wrapper__line"></div>
-          <button class="wrapper__button customers_btn"><img class="wrapper__img" src="images/ico/customers.png" alt=""/>Customers</button>
+          <button class="wrapper__button customers_btn is-active"><img class="wrapper__img" src="images/ico/customers.png" alt=""/>Customers</button>
           <div class="wrapper__line"></div>
           <button class="wrapper__button calendar_btn"><img class="wrapper__img" src="images/ico/calendar.png" alt=""/>Calendar</button>
           <div class="wrapper__line"> </div>
         </div>
       </div>
       <div class="wrapper__right-colunm">
-        <div class="right-column__header">
+        <div class="right-column__header header">
           <div class="header__left-side">
-            <div class="left-side__costumers">Customers</div>
-            <div class="left-side_arrow"></div>
-            <div class="left-side__name">Max Jones</div>
+            <div class="header__costumers">Customers</div>
+            <div class="header_arrow"></div>
+            <div class="header__name">Max Jones</div>
           </div>
           <div class="header__right-side">
-            <input placeholder="SEARCH" class="right-side__input" />
-            <div class="right-side__ring">
+            <input placeholder="SEARCH" class=" header__input" />
+            <div class="header__ring ring">
               <div class="ring__notify">4</div>
             </div>
-            <img src="images/ico/avatar.png" class="right-side__avatar"/>
-            <div class="right-side__user">Hello Lauren</div>
+            <img src="images/ico/avatar.png" class="header__avatar"/>
+            <div class="header__user">Hello Lauren</div>
           </div>
         </div>
         <div class="wrapper__main-content">
@@ -47,9 +48,24 @@
               </div>
               <div class="details__position">Sales & Marketing</div>
             </div>
-            <div class="user-details__info">
-              <div class=""
+            <div class="user-details__info info">
+              <div class="info__phone">
+                <div class="phone__type">PHONE</div>
+                <div class="phone__number">(+31) 140 175 468</div>
+              </div>
+              <div class="info__address">
+                <div class="address__text">ADDRESS</div>
+                <div class="address__address">Binnenweg 50, Rotterdam</div>
+              </div>
+              <button class="info__button">CREATE QUOTE</button>
             </div>
+          </div>
+        </div>
+        <div class="main-content__tabs tabs">
+          <div class="tabs__container">
+            <div class="tabs__button is-active">OVERVIEW</div>
+            <div class="tabs__button">ORDERS</div>
+            <div class="tabs__button">PAYMENTS</div>
           </div>
         </div>
       </div>

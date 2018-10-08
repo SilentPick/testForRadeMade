@@ -5,6 +5,10 @@
 
 body{
   margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
 }
 .wrapeer__left-colunm{
   height: 600px;
@@ -12,14 +16,38 @@ body{
   width: 320px;
   flex-shrink: 0;
 }
-.wrapper{
-  display: flex;
-}
 
 .wrapper__main-content{
   height: 54%;
-  background: yellow;
   display: flex;
+}
+
+.tabs{
+  margin-left: 76px;
+}
+
+.main-content__tabs{
+  height: 40.2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs__container{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.tabs__button{
+  font-size: 14px;
+  position: relative;
+  color: #303841;
+  width: 105px;
+  height: 63px;
+  text-align: center;
+  line-height: 63px;
+  margin-left: -42px;
 }
 
 .wrapper__name{
@@ -48,14 +76,30 @@ body{
   font-size: 15px;
 }
 
+.info__phone{
+  margin-bottom: 56px;
+}
+
+.phone__number{
+  color: #442a9d;
+  font-size: 15px;
+}
+
+.phone__type{
+  color: #999999;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
 .main-content__user-info{
   height: 100%;
-  background: blue;
   width: 17.6%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 
 .user-details__info{
   height: 124px;
@@ -64,6 +108,41 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.info__address{
+  margin-bottom: 56px;
+  margin-right: 113px;
+}
+
+.address__text{
+  font-size: 12px;
+  color: #999999;
+}
+
+.address__address{
+  color: #442a9d;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.info__button{
+  width: 159px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #303841;
+  font-size: 14px;
+  color: #ffc12d;
+  margin-bottom: 56px;
+  margin-right: 35px;
 }
 
 .info__wrapper{
@@ -101,24 +180,28 @@ body{
   align-items: center;
 }
 
-.right-side__ring{
+.ring{
   background: url("/images/ico/ring.png") no-repeat;
   width: 20px;
   position: relative;
   height: 20px;
+}
+
+
+.header__ring {
   margin-right: 37px;
 }
 
-.right-side__avatar{
+.header__avatar{
   height: 38px;
   width: 38px;
   border-radius: 30px;
   margin-right: 17px;
 }
 
-.right-side__user{
+.header__user{
   color: #4f4f4f;
-  font-family: "Open Sans";
+  font-family: "Open Sans"; /* ! move font to body + inputs ect. */
   font-size: 16px;
   font-weight: 700;
   margin-right: 40px;
@@ -137,14 +220,14 @@ body{
     font-size: 9px;
 }
 
-.left-side__costumers{
+.header__costumers{
   color: #4f4f4f;
   font-size: 16px;
   padding-left: 38px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.left-side__name{
+.header__name{
   font-size: 16px;
   color: #442a9d;
   padding-left: 0px;
@@ -155,7 +238,7 @@ body{
 .wrapper__right-colunm{
   height: 389px;
   width: 100%;
-  background: green;
+  background: white;
 }
 .left-colunm__header{
   width: 53px;
@@ -179,7 +262,7 @@ body{
   display: flex;
 }
 
-.right-side__input{
+.header__input{
   background: url(/images/ico/search.png) no-repeat scroll right 17px top 10px;
   width: 285px;
   height: 38px;
@@ -191,7 +274,7 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.left-side_arrow{
+.header_arrow{
   border-top: solid 3px black;
   border-right: solid 3px black;
   height: 7px;
@@ -202,6 +285,17 @@ body{
 .wrapper__img{
   margin-right: 18px;
 }
+
+.wrapper__button{
+  width: 100%;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 26px;
+  padding-top: 8px;
+  position: relative;
+}
+
 .reports_btn{
   height: 53px;
 }
@@ -215,28 +309,31 @@ body{
 .dashboard_btn{
   height: 65px;
 }
-.customers_btn:active{
+
+.customers_btn.is-active{
   background-color: #442a9d;
 }
-.customers_btn:active::before{
+.customers_btn.is-active::before{
   content: "";
-    position: absolute;
-    left: 0px;
-    top: 0;
-    width: 5px;
-    bottom: 0;
-    background-color: #ffc12d;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 5px;
+  bottom: 0;
+  background-color: #ffc12d;
 }
 
-.wrapper__button{
-  width: 100%;
-  font-size: 17px;
-  color: #ffffff;
-  text-align: left;
-  padding-left: 26px;
-  padding-top: 8px;
-  position: relative;
+.tabs__button.is-active::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0;
+  height: 6px;
+  bottom: 0;
+  border-radius: 3px;
+  background-color: #442a9d;
 }
+
 
 .wrapper__line{
   background-color: #ffffff;
